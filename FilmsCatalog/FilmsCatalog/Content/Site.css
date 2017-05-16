@@ -44,17 +44,25 @@ textarea {
     color: #ffffff !important;
 }
 
+.div-poster-min {
+    width: 100px;
+}
+
+.div-poster-max {
+    width: 400px;
+}
+
 .img-poster-min {
     display: block;
-    width: 140px;
-    height: 215px;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
 }
 
 .img-poster-max {
     display: block;
-    width: 40%;
-    height: 40%;
+    max-width: 100%;
+    height: auto;
 }
 
 th {

@@ -47,13 +47,14 @@
         </dt>
 
         <dd>
-            @*@Html.DisplayFor(model => model.Poster)*@
-            <img src="@Url.Content("~/UploadFiles/" + Model.Poster)"
-                 alt="@Url.Content(Model.Caption)"
-                 title="@Url.Content(Model.Caption)"
-                 class="img-poster-max" />
+            <div class="div-poster-max">
+                @*@Html.DisplayFor(model => model.Poster)*@
+                <img src="@Url.Content("~/UploadFiles/" + Model.Poster)"
+                     alt="@Url.Content(Model.Caption)"
+                     title="@Url.Content(Model.Caption)"
+                     class="img-poster-max" />
+            </div>
         </dd>
-
     </dl>
 </div>
 <p>

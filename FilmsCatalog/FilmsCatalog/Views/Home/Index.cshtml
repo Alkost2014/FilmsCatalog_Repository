@@ -70,10 +70,12 @@
                 @Html.DisplayFor(modelItem => item.Producer)
             </td>
             <td>
-                <img src="@Url.Content("~/UploadFiles/" + item.Poster)" 
-                     alt="@Url.Content(item.Caption)"
-                     title="@Url.Content(item.Caption)"
-                     class="img-poster-min" />
+                <div class="div-poster-min">
+                    <img src="@Url.Content("~/UploadFiles/" + item.Poster)"
+                         alt="@Url.Content(item.Caption)"
+                         title="@Url.Content(item.Caption)"
+                         class="img-poster-min" />
+                </div>
             </td>
             <td>
                 @Html.ActionLink("Подробнее", "Details", new { id = item.Id })
